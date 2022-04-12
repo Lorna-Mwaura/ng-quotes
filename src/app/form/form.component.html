@@ -1,31 +1,34 @@
 <div class="container-fluid">
   <h2 class="text-center">Create a new Quote</h2>
   <hr>
-  <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
+  <form (ngSubmit)="submitQuote()" #form="ngForm">
     <div class="form-group">
-        <label for="author">Author</label>
-        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel"required>
-        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel"
+        required>
+      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
         <p>Please fill in!</p>
       </div>
     </div>
     <div class="form-group">
-        <label for="name">Publisher</label>
-        <input type="text" class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel" required >
-        <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
-            <p>Please fill in!</p>
-    </div>
+      <label for="name">Publisher</label>
+      <input type="text" class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher"
+        #publisher="ngModel" required>
+      <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
+        <p>Please fill in!</p>
+      </div>
     </div>
     <div class="form-group">
-        <label for="quote">Quote</label>
-      <textarea class="form-control" id="quote"  rows="4" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea>
-      <div [hidden] = "quote.valid || quote.pristine" class="alert alter-danger">
-          <p>Please fill in!</p>
+      <label for="quote">Quote</label>
+      <textarea type="text" class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote"
+        #quote="ngModel" required></textarea>
+      <div [hidden]="quote.valid || quote.pristine" class="alert alter-danger">
+        <p>Please fill in!</p>
 
       </div>
     </div>
     <br>
-        <button type="submit" class="btn btn-success">Add Quote</button>
+    <button type="submit" class="btn btn-success">Save</button>
 
   </form>
 </div>

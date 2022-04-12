@@ -13,8 +13,13 @@ quotes:Quote[] =[
 
 ];
 addNewQuote(quote:Quote){
-  let qouteLength = this.quotes.length;
-    quote.id = qouteLength+1;
+  // let qouteLength = this.quotes.length;
+  //   quote.id = qouteLength+1;
+  //   quote.completeDate = new Date(quote.completeDate)
+  // this.quotes.push(quote)
+  quote.author = "",
+  quote.publisher = "",
+  quote.author = ""
   this.quotes.push(quote)
 }
 arr:number[] = this.quotes.map(quotes=>quotes.upvotes)
