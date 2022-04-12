@@ -15,4 +15,4 @@ export class Quote {
         this.downvotes = downvotes
         this. completeDate = completeDate
     }
-}
+} 
