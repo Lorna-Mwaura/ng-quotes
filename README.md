@@ -27,5 +27,6 @@
  Copyright (c) 2022 [Click to view license](LICENSE)
 [Go Back to the top](#Quotes)
 ## Authors Info
-[Lona Wanjiku]
+Lona Wanjiku
+lornamwaura99@gmail.com
 [Go Back to the top](#Quotes)
