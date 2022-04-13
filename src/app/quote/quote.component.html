@@ -1,5 +1,10 @@
+<div class="row">
+    <div class="col-6">
 <app-form (addQuote)="generateQuote($event)"></app-form>
-
+</div>
+<div class="col-6">
+    <h2>My Quotes</h2>
+    <hr>
 <ul *ngFor = 'let quote of quotes; let i = index'>
     <div *ngIf="quote.upvotes== highest && quote.upvotes > 0; then highlight else empty"></div>
     <ng-template #highlight>
@@ -21,3 +26,5 @@
         </li>
     </ng-template>
 </ul>
+</div>
+</div>
