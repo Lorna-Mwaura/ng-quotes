@@ -12,7 +12,7 @@
 
 ### Requirements
 * Make sure you have access to a browser
-* Click here to access the project or click the link in the about section 
+* Click here to access the project or click the link in the about section https://lorna-mwaura.github.io/ng-quotes/
 
 ### Installation Process
 [Go Back to the top](#Quotes)
